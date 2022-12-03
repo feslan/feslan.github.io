@@ -1,0 +1,110 @@
+<main class="w-screen h-screen flex justify-center items-center relative">
+  <ng-particles
+    [id]="id"
+    [options]="particlesOptions"
+    [particlesInit]="particlesInit"
+    (particlesLoaded)="particlesLoaded($event)"
+  ></ng-particles>
+
+  <section
+    class="absolute top-1/2 right-1/2 left-1/2 bottom-1/2 flex flex-col sm:flex-row items-center justify-center"
+  >
+    <span>
+      <img
+        class="profile-img"
+        src="../../../assets/photo1649944366.jpeg"
+        alt=""
+      />
+    </span>
+    <span class="ml-10 flex flex-col justify-center items-start">
+      <span class="text-6xl" style="font-family: 'Polya'">Ferhat</span>
+      <span class="text-6xl" style="font-family: 'Polya'">Aslan</span>
+
+      <span class="text-2xl" style="font-family: 'Alcatraz'"
+        >Software Developer</span
+      >
+      <span class="flex flex-row justify-start items-center gap-x-3 mt-3">
+        <a
+          href="https://github.com/ferhat-aslan"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="w-8 h-auto hover:scale-75 transition duration-300 cursor-pointer"
+            src="../../../assets/icons/github.svg"
+            alt=""
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/ferhataslan027/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="w-8 h-auto hover:scale-75 transition duration-700 cursor-pointer"
+            src="../../../assets/icons/instagram.svg"
+            alt=""
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/aslanferhat/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="w-8 h-auto hover:scale-75 transition duration-700 cursor-pointer"
+            src="../../../assets/icons/linkedin.svg"
+            alt=""
+          />
+        </a>
+        <a
+          href="https://medium.com/@ferhat-aslan"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="w-8 h-auto hover:scale-75 transition duration-700 cursor-pointer"
+            src="../../../assets/icons/medium.svg"
+            alt=""
+          />
+        </a>
+
+        <a
+          href="mailto: aslanferhat16@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="w-8 h-auto hover:scale-75 transition duration-700 cursor-pointer"
+            src="../../../assets/icons/envelope-solid.svg"
+            alt=""
+          />
+        </a>
+      </span>
+    </span>
+  </section>
+  <div
+    style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
+    class="absolute right-1/2 flex flex-row items-center justify-center left-1/2 bottom-10 bg-white rounded-full"
+  >
+    <span
+      [routerLink]="['/']"
+      [routerLinkActiveOptions]="{ exact: true }"
+      [routerLinkActive]="'active'"
+      class="bg-white font-semibold p-3 border border-[#e5e7eb] rounded-l-full cursor-pointer select-none hover:text-blue-500"
+      >Homepage</span
+    >
+    <span
+      [routerLink]="['/background']"
+      [routerLinkActive]="'active'"
+      class="bg-white p-3 border font-semibold border-[#e5e7eb] cursor-pointer select-none hover:text-blue-500"
+      >Background</span
+    >
+    <span
+      [routerLink]="['/projects']"
+      [routerLinkActive]="'active'"
+      class="bg-white p-3 border font-semibold border-[#e5e7eb] rounded-r-full cursor-pointer select-none hover:text-blue-500"
+      >Projects</span
+    >
+  </div>
+</main>

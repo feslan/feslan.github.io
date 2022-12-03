@@ -1,0 +1,12 @@
+.profile-img {
+  clip-path: circle();
+  max-width: 150px;
+  height: auto;
+  width: 150px;
+  background-color: black;
+  padding: 1px;
+}
+.active {
+  color: rgb(59 130 246);
+  font-weight: 600;
+}

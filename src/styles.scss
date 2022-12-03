@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "Polya";
+  src: url(assets/fonts/POLYA.otf) format("opentype");
+}
+@font-face {
+  font-family: "Alcatraz";
+  src: url(assets/fonts/AlcatrazDemo-OVAKe.otf) format("opentype");
+}
+a {
+  text-decoration: none;
+}
