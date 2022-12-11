@@ -8,6 +8,7 @@ import {
   OutMode,
 } from 'tsparticles-engine';
 import { loadFull } from 'tsparticles';
+import mixpanel from 'mixpanel-browser';
 
 @Component({
   selector: 'app-homepage',
@@ -90,13 +91,9 @@ export class HomepageComponent implements OnInit {
     detectRetina: true,
   };
 
-  particlesLoaded(container: Container): void {
-    console.log(container);
-  }
+  particlesLoaded(container: Container): void {}
 
   async particlesInit(engine: Engine): Promise<void> {
-    console.log(engine);
-
     // Starting from 1.19.0 you can add custom presets or shape here, using the current tsParticles instance (main)
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
@@ -105,4 +102,39 @@ export class HomepageComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+  mixpanel(type: any) {
+    let lang = navigator.language;
+    let timexone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    if (type === 'resume') {
+      mixpanel.track('resume download', {
+        browserLanguage: lang,
+        timezone: timexone,
+      });
+    } else if (type === 'github') {
+      mixpanel.track('github', {
+        browserLanguage: lang,
+        timezone: timexone,
+      });
+    } else if (type === 'instagram') {
+      mixpanel.track('instagram', {
+        browserLanguage: lang,
+        timezone: timexone,
+      });
+    } else if (type === 'linkedin') {
+      mixpanel.track('linkedin', {
+        browserLanguage: lang,
+        timezone: timexone,
+      });
+    } else if (type === 'medium') {
+      mixpanel.track('medium', {
+        browserLanguage: lang,
+        timezone: timexone,
+      });
+    } else if (type === 'email') {
+      mixpanel.track('email', {
+        browserLanguage: lang,
+        timezone: timexone,
+      });
+    }
+  }
 }

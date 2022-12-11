@@ -7,6 +7,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { BackgroundComponent } from './components/background/background.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { NgParticlesModule } from 'ng-particles';
+import { MixpanelService } from './services/mixpanel.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { NgParticlesModule } from 'ng-particles';
     ProjectsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgParticlesModule],
-  providers: [],
+  providers: [MixpanelService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
