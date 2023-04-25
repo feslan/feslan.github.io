@@ -12,7 +12,7 @@ export default function Home() {
         description={siteMetadata.description}
       />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="space-y-2 pb-8 pt-6 md:space-y-5">
+        <div className="space-y-2 pb-8 pt-6 md:space-y-5 ">
           <h1
             id="text"
             className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-3xl  leading-9 tracking-tight text-transparent sm:text-4xl sm:leading-10 md:text-6xl md:leading-14   font-black "
