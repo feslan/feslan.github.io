@@ -38,7 +38,7 @@ export default function Home() {
             {/* {siteMetadata.description} */}Hey 🖐, I am a Software Developer
             who is focused on <span className="text-indigo-500">Web</span> and{" "}
             <span className="text-orange-400">IoT. </span>
-            based in Turkiye🇹🇷. I studied Electric/Electronic Engineering and
+            based in Germany🇩🇪. I studied Electric/Electronic Engineering and
             Civil Engineering. I have solid experience/knowledge about Web
             Development, Angular, Typescript, Javascript, HTML, CSS. I am
             technology enthusiast, loves to learn new things.
