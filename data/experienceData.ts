@@ -1,6 +1,6 @@
 const experienceData = [
   {
-    title: "Frontend Developer",
+    title: "Software Developer",
     company: "@Ollang Inc",
     description: `  I was
       part of the developer team that developed A few dashboards such as client, translator,
@@ -33,7 +33,7 @@ const experienceData = [
     ],
   },
   {
-    title: "Frontend Developer Traineeship Bootcamp",
+    title: "Software Developer (Angular) Traineeship Bootcamp",
     company: "@Patika Dev",
     description: `  Created a Ecommerce website and Admin Dashboard (Backend And Frontend). Client can add
       new products ,edit or delete products and manages orders. Customers can order products
